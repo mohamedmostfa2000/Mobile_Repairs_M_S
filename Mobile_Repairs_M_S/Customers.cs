@@ -108,5 +108,33 @@ namespace Mobile_Repairs_M_S
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Key == 0)
+                {
+                    MessageBox.Show("Select a customer");
+                }
+                else
+                {
+                    
+                    string Query = "delete from CustomerTbl where CustCode ={0}";
+                    Query = string.Format(Query, Key);
+                    Con.SetData(Query);
+                    ShowCustomersList();
+                    MessageBox.Show("Customer Deleted");
+                    CustNameTb.Text = "";
+                    CustPhoneTb.Text = "";
+                    CustAddTb.Text = "";
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }
