@@ -62,5 +62,21 @@ namespace Mobile_Repairs_M_S
                 MessageBox.Show(Ex.Message);
             }
         }
+        int Key = 0;
+        private void CustomersList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            CustNameTb.Text = CustomersList.SelectedRows[0].Cells[1].Value.ToString();
+            CustPhoneTb.Text = CustomersList.SelectedRows[0].Cells[2].Value.ToString();
+            CustAddTb.Text=CustomersList.SelectedRows[0].Cells[3].Value.ToString();
+            
+            if (CustNameTb.Text == "")
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(CustomersList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
