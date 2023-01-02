@@ -37,7 +37,7 @@ namespace Mobile_Repairs_M_S
         {
             try
             {
-                if (CustNameTb.Text == "")
+                if (CustNameTb.Text == "" || CustPhoneTb.Text=="" || CustAddTb.Text=="")
                 {
                     MessageBox.Show("Missing Data");
                 }
@@ -76,6 +76,36 @@ namespace Mobile_Repairs_M_S
             else
             {
                 Key = Convert.ToInt32(CustomersList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CustNameTb.Text == "" || CustPhoneTb.Text == "" || CustAddTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data");
+                }
+                else
+                {
+                    string CName = CustNameTb.Text;
+                    string CPhone = CustPhoneTb.Text;
+                    string CAdd = CustAddTb.Text;
+                    string Query = "Update CustomerTbl set CustName = '{0}',CustPhone = '{1}',CustAdd = '{2}' where CustCode ={3}";
+                    Query = string.Format(Query, CName, CPhone, CAdd,Key);
+                    Con.SetData(Query);
+                    ShowCustomersList();
+                    MessageBox.Show("Customer Updated");
+                    CustNameTb.Text = "";
+                    CustPhoneTb.Text = "";
+                    CustAddTb.Text = "";
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
             }
         }
     }
