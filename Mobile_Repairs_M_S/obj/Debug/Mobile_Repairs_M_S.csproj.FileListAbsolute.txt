@@ -8,3 +8,4 @@ C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobi
 C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.csproj.CoreCompileInputs.cache
 C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.exe
 C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.pdb
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.Customers.resources
