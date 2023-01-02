@@ -1,0 +1,10 @@
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\bin\Debug\Mobile_Repairs_M_S.exe.config
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\bin\Debug\Mobile_Repairs_M_S.exe
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\bin\Debug\Mobile_Repairs_M_S.pdb
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.csproj.AssemblyReference.cache
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.Login.resources
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.Properties.Resources.resources
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.csproj.GenerateResource.cache
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.csproj.CoreCompileInputs.cache
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.exe
+C:\Users\fager\source\repos\Mobile_Repairs_M_S\Mobile_Repairs_M_S\obj\Debug\Mobile_Repairs_M_S.pdb
