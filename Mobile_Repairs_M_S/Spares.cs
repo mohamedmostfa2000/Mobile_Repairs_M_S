@@ -12,12 +12,23 @@ namespace Mobile_Repairs_M_S
 {
     public partial class Spares : Form
     {
+        Functions Con;
         public Spares()
         {
+            Con = new Functions();
             InitializeComponent();
+            ShowSparesList();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ShowSparesList()
+        {
+            string Query = "Select * from SpareTbl";
+            PartsList.DataSource = Con.GetData(Query);
+
+
+        }
+
+        private void SaveBtn_Click(object sender, EventArgs e)
         {
 
         }
