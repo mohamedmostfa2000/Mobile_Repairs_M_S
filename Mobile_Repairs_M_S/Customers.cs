@@ -51,9 +51,7 @@ namespace Mobile_Repairs_M_S
                     Con.SetData(Query);
                     ShowCustomersList();
                     MessageBox.Show("Customer Added");
-                    CustNameTb.Text = "";
-                    CustPhoneTb.Text = "";
-                    CustAddTb.Text = "";
+                    Clear();
                 }
 
             }
@@ -97,9 +95,7 @@ namespace Mobile_Repairs_M_S
                     Con.SetData(Query);
                     ShowCustomersList();
                     MessageBox.Show("Customer Updated");
-                    CustNameTb.Text = "";
-                    CustPhoneTb.Text = "";
-                    CustAddTb.Text = "";
+                    Clear();
                 }
 
             }
@@ -125,9 +121,7 @@ namespace Mobile_Repairs_M_S
                     Con.SetData(Query);
                     ShowCustomersList();
                     MessageBox.Show("Customer Deleted");
-                    CustNameTb.Text = "";
-                    CustPhoneTb.Text = "";
-                    CustAddTb.Text = "";
+                    Clear();
                 }
 
             }
@@ -135,6 +129,12 @@ namespace Mobile_Repairs_M_S
             {
                 MessageBox.Show(Ex.Message);
             }
+        }
+         private void Clear()
+        {
+            CustNameTb.Text = "";
+            CustPhoneTb.Text = "";
+            CustAddTb.Text = "";
         }
     }
 }
