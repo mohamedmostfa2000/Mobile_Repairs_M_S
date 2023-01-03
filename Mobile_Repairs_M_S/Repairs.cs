@@ -111,5 +111,33 @@ namespace Mobile_Repairs_M_S
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        int Key = 0;
+
+        private void RepairsList_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            RepDate.Text = RepairsList.SelectedRows[0].Cells[1].Value.ToString();
+            CustomerCb.SelectedValue = RepairsList.SelectedRows[0].Cells[2].Value.ToString();
+            PhoneNumTb.Text = RepairsList.SelectedRows[0].Cells[3].Value.ToString();
+            DevNameTb.Text = RepairsList.SelectedRows[0].Cells[4].Value.ToString();
+            DevModelTb.Text = RepairsList.SelectedRows[0].Cells[5].Value.ToString();
+            ProblemTb.Text = RepairsList.SelectedRows[0].Cells[6].Value.ToString();
+            SpareCb.SelectedValue = RepairsList.SelectedRows[0].Cells[7].Value.ToString();
+            GetCost();
+            RepCostTb.Text = (((int)RepairsList.SelectedRows[0].Cells[8].Value) - (Convert.ToInt32(SpareCostTb.Text))).ToString();
+            
+
+
+
+
+            if (CustomerCb.SelectedIndex == -1)
+            {
+                Key = 0;
+            }
+            else
+            {
+                Key = Convert.ToInt32(RepairsList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
     }
 }
