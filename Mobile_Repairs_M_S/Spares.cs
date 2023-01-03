@@ -36,8 +36,31 @@ namespace Mobile_Repairs_M_S
         }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-           
-        
-    }
+            try
+            {
+                if (PartNameTb.Text == "" || PartCostTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data");
+                }
+                else
+                {
+                    string PName = PartNameTb.Text;
+                    int PCost = Convert.ToInt32(PartCostTb.Text);
+
+                    string Query = "insert into SpareTbl values('{0}',{1})";
+                    Query = string.Format(Query, PName, PCost );
+                    Con.SetData(Query);
+                    ShowSparesList();
+                    MessageBox.Show("Spare Added");
+                    Clear();
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+
+        }
     }
 }
