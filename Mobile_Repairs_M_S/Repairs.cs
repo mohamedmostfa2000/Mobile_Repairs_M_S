@@ -12,14 +12,21 @@ namespace Mobile_Repairs_M_S
 {
     public partial class Repairs : Form
     {
+        Functions Con;
         public Repairs()
         {
+            Con = new Functions();
             InitializeComponent();
+            ShowRepairsList();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void ShowRepairsList()
         {
+            string Query = "Select * from RepairTbl";
+            RepairsList.DataSource = Con.GetData(Query);
+
 
         }
+
     }
 }
