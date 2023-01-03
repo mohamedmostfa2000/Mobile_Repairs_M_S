@@ -137,5 +137,7 @@ namespace Mobile_Repairs_M_S
             CustAddTb.Text = "";
             Key = 0;
         }
+
+       
     }
 }

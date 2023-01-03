@@ -60,12 +60,12 @@ namespace Mobile_Repairs_M_S
         private void Clear()
         {
             RepDate.Text = "";
-            CustomerCb.SelectedIndex = -1;
+          
             PhoneNumTb.Text = "";
             DevNameTb.Text = "";
             DevModelTb.Text = "";
             ProblemTb.Text = "";
-            SpareCb.SelectedIndex = -1;
+            
             SpareCostTb.Text = "";
             RepCostTb.Text = "";
             Key = 0;

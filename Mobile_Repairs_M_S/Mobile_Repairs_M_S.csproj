@@ -127,5 +127,65 @@
   <ItemGroup>
     <None Include="Resources\images %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\186492-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\illustration-concept-accessories1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36384.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0eb0fa5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0316546.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gt4msgh_t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gt4msgh_t1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

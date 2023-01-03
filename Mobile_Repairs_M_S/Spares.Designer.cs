@@ -42,12 +42,24 @@ namespace Mobile_Repairs_M_S
             this.PartNameTb = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.PartsList = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.LogoutPic = new System.Windows.Forms.PictureBox();
+            this.SparesPic = new System.Windows.Forms.PictureBox();
+            this.CustomersPic = new System.Windows.Forms.PictureBox();
+            this.RepairesPic = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PartsList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomersPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairesPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -147,21 +159,19 @@ namespace Mobile_Repairs_M_S
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.LogoutPic);
+            this.panel1.Controls.Add(this.SparesPic);
+            this.panel1.Controls.Add(this.CustomersPic);
+            this.panel1.Controls.Add(this.RepairesPic);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(105, 894);
+            this.panel1.Size = new System.Drawing.Size(114, 894);
             this.panel1.TabIndex = 20;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Mobile_Repairs_M_S.Properties.Resources.images__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 19);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -228,6 +238,100 @@ namespace Mobile_Repairs_M_S
             this.PartsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.PartsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartsList_CellContentClick);
             // 
+            // LogoutPic
+            // 
+            this.LogoutPic.Image = global::Mobile_Repairs_M_S.Properties.Resources.download__6_1;
+            this.LogoutPic.Location = new System.Drawing.Point(4, 710);
+            this.LogoutPic.Name = "LogoutPic";
+            this.LogoutPic.Size = new System.Drawing.Size(102, 76);
+            this.LogoutPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoutPic.TabIndex = 3;
+            this.LogoutPic.TabStop = false;
+            // 
+            // SparesPic
+            // 
+            this.SparesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._191;
+            this.SparesPic.Location = new System.Drawing.Point(3, 340);
+            this.SparesPic.Name = "SparesPic";
+            this.SparesPic.Size = new System.Drawing.Size(97, 98);
+            this.SparesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SparesPic.TabIndex = 2;
+            this.SparesPic.TabStop = false;
+            // 
+            // CustomersPic
+            // 
+            this.CustomersPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._186492_200;
+            this.CustomersPic.Location = new System.Drawing.Point(3, 183);
+            this.CustomersPic.Name = "CustomersPic";
+            this.CustomersPic.Size = new System.Drawing.Size(103, 93);
+            this.CustomersPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CustomersPic.TabIndex = 1;
+            this.CustomersPic.TabStop = false;
+            // 
+            // RepairesPic
+            // 
+            this.RepairesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._36384;
+            this.RepairesPic.Location = new System.Drawing.Point(1, 494);
+            this.RepairesPic.Name = "RepairesPic";
+            this.RepairesPic.Size = new System.Drawing.Size(102, 110);
+            this.RepairesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RepairesPic.TabIndex = 0;
+            this.RepairesPic.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(1, 156);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(109, 24);
+            this.label7.TabIndex = 36;
+            this.label7.Text = "Customers";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(17, 683);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(74, 24);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Logout";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(10, 467);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 24);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "Repairs";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(16, 313);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 24);
+            this.label10.TabIndex = 39;
+            this.label10.Text = "Spares";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Mobile_Repairs_M_S.Properties.Resources.images1;
+            this.pictureBox1.Location = new System.Drawing.Point(8, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
+            // 
             // Spares
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -250,8 +354,13 @@ namespace Mobile_Repairs_M_S
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Spares";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PartsList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomersPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairesPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -268,8 +377,16 @@ namespace Mobile_Repairs_M_S
         private System.Windows.Forms.TextBox PartNameTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox RepairesPic;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2DataGridView PartsList;
+        private System.Windows.Forms.PictureBox SparesPic;
+        private System.Windows.Forms.PictureBox CustomersPic;
+        private System.Windows.Forms.PictureBox LogoutPic;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

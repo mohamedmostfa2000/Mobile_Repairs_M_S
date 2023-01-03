@@ -17,9 +17,22 @@ namespace Mobile_Repairs_M_S
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void LoginBtn_Click(object sender, EventArgs e)
         {
-
+            if(UserNameTb.Text == "" || PasswordTb.Text == "")
+            {
+                MessageBox.Show("Missing Data !!!");
+            }
+            else if (UserNameTb.Text == "Admin" && PasswordTb.Text == "Password")
+            {
+                Spares obj = new Spares();
+                obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Data");
+            }
         }
     }
 }
