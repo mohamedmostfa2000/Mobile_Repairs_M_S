@@ -63,11 +63,7 @@ namespace Mobile_Repairs_M_S
 
         }
 
-        private void EditBtn_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         int Key = 0;
 
         private void PartsList_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -85,5 +81,35 @@ namespace Mobile_Repairs_M_S
                 Key = Convert.ToInt32(PartsList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                if (PartNameTb.Text == "" || PartCostTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data");
+                }
+                else
+                {
+                    string PName = PartNameTb.Text;
+                    int PCost = Convert.ToInt32(PartCostTb.Text);
+
+                    string Query = "Update SpareTbl set SpareName = '{0}',SpareCost = {1} where SpareCode = {2}";
+                    Query = string.Format(Query, PName, PCost,Key);
+                    Con.SetData(Query);
+                    ShowSparesList();
+                    MessageBox.Show("Spare Updated");
+                    Clear();
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
+
     }
 }
