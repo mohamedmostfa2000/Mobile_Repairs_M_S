@@ -68,6 +68,7 @@ namespace Mobile_Repairs_M_S
             SpareCb.SelectedIndex = -1;
             SpareCostTb.Text = "";
             RepCostTb.Text = "";
+            Key = 0;
             
         }
 
@@ -137,6 +138,41 @@ namespace Mobile_Repairs_M_S
             else
             {
                 Key = Convert.ToInt32(RepairsList.SelectedRows[0].Cells[0].Value.ToString());
+            }
+        }
+
+        private void EditBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CustomerCb.SelectedIndex == -1 || SpareCb.SelectedIndex == -1 || DevModelTb.Text == "" || DevNameTb.Text == "" || PhoneNumTb.Text == "" || ProblemTb.Text == "" || SpareCostTb.Text == "" || RepCostTb.Text == "")
+                {
+                    MessageBox.Show("Missing Data");
+                }
+                else
+                {
+                    string RDate = RepDate.Value.Date.ToString();
+                    int Customer = Convert.ToInt32(CustomerCb.SelectedValue.ToString());
+                    string CPhone = PhoneNumTb.Text;
+                    string DeviceName = DevNameTb.Text;
+                    string DeviceModel = DevModelTb.Text;
+                    string Problem = ProblemTb.Text;
+                    int Spare = Convert.ToInt32(SpareCb.SelectedValue.ToString());
+                    int RepCost = Convert.ToInt32(RepCostTb.Text);
+                    int Total = Convert.ToInt32(SpareCostTb.Text) + RepCost;
+
+                    string Query = "Update RepairTbl set RepDate ='{0}',Customer = {1},PhoneNumber = '{2}', DeviceName = '{3}',DeviceModel = '{4}', Problem = '{5}',Spare = {6},TotalCost = {7} where RepCode={8}";
+                    Query = string.Format(Query, RDate, Customer, CPhone, DeviceName, DeviceModel, Problem, Spare, Total,Key);
+                    Con.SetData(Query);
+                    ShowRepairsList();
+                    Clear();
+                    MessageBox.Show("Repair Updated");
+
+                }
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
             }
         }
     }
