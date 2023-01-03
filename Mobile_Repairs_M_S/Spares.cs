@@ -32,6 +32,7 @@ namespace Mobile_Repairs_M_S
         {
             PartNameTb.Text = "";
             PartCostTb.Text = "";
+            Key = 0;
            
         }
         private void SaveBtn_Click(object sender, EventArgs e)
@@ -51,8 +52,9 @@ namespace Mobile_Repairs_M_S
                     Query = string.Format(Query, PName, PCost );
                     Con.SetData(Query);
                     ShowSparesList();
-                    MessageBox.Show("Spare Added");
                     Clear();
+                    MessageBox.Show("Spare Added");
+                    
                 }
 
             }
@@ -100,8 +102,9 @@ namespace Mobile_Repairs_M_S
                     Query = string.Format(Query, PName, PCost,Key);
                     Con.SetData(Query);
                     ShowSparesList();
-                    MessageBox.Show("Spare Updated");
                     Clear();
+                    MessageBox.Show("Spare Updated");
+                    
                 }
 
             }
@@ -111,5 +114,31 @@ namespace Mobile_Repairs_M_S
             }
         }
 
+        private void DeleteBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Key == 0)
+                {
+                    MessageBox.Show("Select a spare");
+                }
+                else
+                {
+
+                    string Query = "delete from SpareTbl where SpareCode ={0}";
+                    Query = string.Format(Query, Key);
+                    Con.SetData(Query);
+                    ShowSparesList();
+                    Clear();
+                    MessageBox.Show("Spare Deleted");
+                    
+                }
+
+            }
+            catch (Exception Ex)
+            {
+                MessageBox.Show(Ex.Message);
+            }
+        }
     }
 }
