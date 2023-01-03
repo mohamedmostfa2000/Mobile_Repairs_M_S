@@ -46,6 +46,17 @@ namespace Mobile_Repairs_M_S
             SpareCb.DataSource = Con.GetData(Query);
         }
 
+        private void GetCost()
+        {
+            string Query = "Select * from SpareTbl where SpareCode = {0} ";
+            Query = string.Format(Query, SpareCb.SelectedValue.ToString());
+            foreach (DataRow dr in Con.GetData(Query).Rows)
+            {
+                SpareCostTb.Text = dr["SpareCost"].ToString();
+
+            }
+        }
+
         private void Clear()
         {
             RepDate.Text = "";
@@ -58,6 +69,12 @@ namespace Mobile_Repairs_M_S
             SpareCostTb.Text = "";
             RepCostTb.Text = "";
             
+        }
+
+
+        private void SpareCb_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GetCost();
         }
     }
 }
