@@ -28,9 +28,16 @@ namespace Mobile_Repairs_M_S
 
         }
 
+        private void Clear()
+        {
+            PartNameTb.Text = "";
+            PartCostTb.Text = "";
+           
+        }
         private void SaveBtn_Click(object sender, EventArgs e)
         {
-
-        }
+           
+        
+    }
     }
 }
