@@ -20,6 +20,7 @@ namespace Mobile_Repairs_M_S
             ShowRepairsList();
             GetCustomers();
             GetSpares();
+            Clear();
         }
 
         private void ShowRepairsList()
@@ -43,6 +44,20 @@ namespace Mobile_Repairs_M_S
             SpareCb.DisplayMember = Con.GetData(Query).Columns["SpareName"].ToString();
             SpareCb.ValueMember = Con.GetData(Query).Columns["SpareCode"].ToString();
             SpareCb.DataSource = Con.GetData(Query);
+        }
+
+        private void Clear()
+        {
+            RepDate.Text = "";
+            CustomerCb.SelectedIndex = -1;
+            PhoneNumTb.Text = "";
+            DevNameTb.Text = "";
+            DevModelTb.Text = "";
+            ProblemTb.Text = "";
+            SpareCb.SelectedIndex = -1;
+            SpareCostTb.Text = "";
+            RepCostTb.Text = "";
+            
         }
     }
 }
