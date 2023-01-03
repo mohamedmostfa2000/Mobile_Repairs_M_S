@@ -77,6 +77,7 @@ namespace Mobile_Repairs_M_S
             this.EditBtn.TabIndex = 29;
             this.EditBtn.Text = "Update";
             this.EditBtn.UseVisualStyleBackColor = false;
+            this.EditBtn.Click += new System.EventHandler(this.EditBtn_Click);
             // 
             // DeleteBtn
             // 
@@ -89,7 +90,6 @@ namespace Mobile_Repairs_M_S
             this.DeleteBtn.TabIndex = 28;
             this.DeleteBtn.Text = "Delete";
             this.DeleteBtn.UseVisualStyleBackColor = false;
-            //this.DeleteBtn.Click += new System.EventHandler(this.button2_Click);
             // 
             // SaveBtn
             // 
@@ -225,6 +225,7 @@ namespace Mobile_Repairs_M_S
             this.PartsList.ThemeStyle.RowsStyle.Height = 24;
             this.PartsList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PartsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.PartsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartsList_CellContentClick);
             // 
             // Spares
             // 
