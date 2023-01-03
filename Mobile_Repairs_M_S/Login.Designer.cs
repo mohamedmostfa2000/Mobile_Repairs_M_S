@@ -136,6 +136,7 @@ namespace Mobile_Repairs_M_S
             this.ResetLabel.Size = new System.Drawing.Size(94, 32);
             this.ResetLabel.TabIndex = 7;
             this.ResetLabel.Text = "Reset";
+            this.ResetLabel.Click += new System.EventHandler(this.ResetLabel_Click);
             // 
             // pictureBox2
             // 

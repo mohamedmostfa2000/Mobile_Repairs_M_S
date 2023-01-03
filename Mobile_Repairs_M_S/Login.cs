@@ -34,5 +34,11 @@ namespace Mobile_Repairs_M_S
                 MessageBox.Show("Wrong Data");
             }
         }
+
+        private void ResetLabel_Click(object sender, EventArgs e)
+        {
+            UserNameTb.Text = "";
+            PasswordTb.Text = "";
+        }
     }
 }

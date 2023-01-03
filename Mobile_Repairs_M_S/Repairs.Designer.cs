@@ -29,9 +29,9 @@ namespace Mobile_Repairs_M_S
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -42,6 +42,15 @@ namespace Mobile_Repairs_M_S
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.RepairesPic = new System.Windows.Forms.PictureBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.CustomersPic = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.SparesPic = new System.Windows.Forms.PictureBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.LogoutPic = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.ProblemTb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,22 +67,13 @@ namespace Mobile_Repairs_M_S
             this.CustomerCb = new System.Windows.Forms.ComboBox();
             this.SpareCb = new System.Windows.Forms.ComboBox();
             this.RepairsList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.LogoutPic = new System.Windows.Forms.PictureBox();
-            this.SparesPic = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.RepairesPic = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RepairsList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepairesPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomersPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairsList)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -179,7 +179,7 @@ namespace Mobile_Repairs_M_S
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.RepairesPic);
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.CustomersPic);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.SparesPic);
             this.panel1.Controls.Add(this.label14);
@@ -189,6 +189,104 @@ namespace Mobile_Repairs_M_S
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(105, 963);
             this.panel1.TabIndex = 20;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Mobile_Repairs_M_S.Properties.Resources.images1;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 57;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(11, 313);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(75, 24);
+            this.label11.TabIndex = 56;
+            this.label11.Text = "Spares";
+            // 
+            // RepairesPic
+            // 
+            this.RepairesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._36384;
+            this.RepairesPic.Location = new System.Drawing.Point(-4, 494);
+            this.RepairesPic.Name = "RepairesPic";
+            this.RepairesPic.Size = new System.Drawing.Size(102, 110);
+            this.RepairesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RepairesPic.TabIndex = 49;
+            this.RepairesPic.TabStop = false;
+            this.RepairesPic.Click += new System.EventHandler(this.RepairesPic_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(5, 467);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 24);
+            this.label12.TabIndex = 55;
+            this.label12.Text = "Repairs";
+            // 
+            // CustomersPic
+            // 
+            this.CustomersPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._186492_200;
+            this.CustomersPic.Location = new System.Drawing.Point(-2, 183);
+            this.CustomersPic.Name = "CustomersPic";
+            this.CustomersPic.Size = new System.Drawing.Size(103, 93);
+            this.CustomersPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CustomersPic.TabIndex = 50;
+            this.CustomersPic.TabStop = false;
+            this.CustomersPic.Click += new System.EventHandler(this.CustomersPic_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(12, 683);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(74, 24);
+            this.label13.TabIndex = 54;
+            this.label13.Text = "Logout";
+            // 
+            // SparesPic
+            // 
+            this.SparesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._191;
+            this.SparesPic.Location = new System.Drawing.Point(-2, 340);
+            this.SparesPic.Name = "SparesPic";
+            this.SparesPic.Size = new System.Drawing.Size(97, 98);
+            this.SparesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SparesPic.TabIndex = 51;
+            this.SparesPic.TabStop = false;
+            this.SparesPic.Click += new System.EventHandler(this.SparesPic_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(-4, 156);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(109, 24);
+            this.label14.TabIndex = 53;
+            this.label14.Text = "Customers";
+            // 
+            // LogoutPic
+            // 
+            this.LogoutPic.Image = global::Mobile_Repairs_M_S.Properties.Resources.download__6_1;
+            this.LogoutPic.Location = new System.Drawing.Point(-1, 710);
+            this.LogoutPic.Name = "LogoutPic";
+            this.LogoutPic.Size = new System.Drawing.Size(102, 76);
+            this.LogoutPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoutPic.TabIndex = 52;
+            this.LogoutPic.TabStop = false;
+            this.LogoutPic.Click += new System.EventHandler(this.LogoutPic_Click);
             // 
             // label1
             // 
@@ -344,26 +442,26 @@ namespace Mobile_Repairs_M_S
             // 
             // RepairsList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.RepairsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.RepairsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.RepairsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.RepairsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.RepairsList.ColumnHeadersHeight = 24;
             this.RepairsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.RepairsList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.RepairsList.DefaultCellStyle = dataGridViewCellStyle12;
             this.RepairsList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.RepairsList.Location = new System.Drawing.Point(475, 120);
             this.RepairsList.Name = "RepairsList";
@@ -395,100 +493,6 @@ namespace Mobile_Repairs_M_S
             this.RepairsList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.RepairsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.RepairsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RepairsList_CellContentClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Mobile_Repairs_M_S.Properties.Resources.images1;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(103, 93);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 57;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(11, 313);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 24);
-            this.label11.TabIndex = 56;
-            this.label11.Text = "Spares";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(5, 467);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 24);
-            this.label12.TabIndex = 55;
-            this.label12.Text = "Repairs";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(12, 683);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(74, 24);
-            this.label13.TabIndex = 54;
-            this.label13.Text = "Logout";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(-4, 156);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 24);
-            this.label14.TabIndex = 53;
-            this.label14.Text = "Customers";
-            // 
-            // LogoutPic
-            // 
-            this.LogoutPic.Image = global::Mobile_Repairs_M_S.Properties.Resources.download__6_1;
-            this.LogoutPic.Location = new System.Drawing.Point(-1, 710);
-            this.LogoutPic.Name = "LogoutPic";
-            this.LogoutPic.Size = new System.Drawing.Size(102, 76);
-            this.LogoutPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoutPic.TabIndex = 52;
-            this.LogoutPic.TabStop = false;
-            // 
-            // SparesPic
-            // 
-            this.SparesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._191;
-            this.SparesPic.Location = new System.Drawing.Point(-2, 340);
-            this.SparesPic.Name = "SparesPic";
-            this.SparesPic.Size = new System.Drawing.Size(97, 98);
-            this.SparesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SparesPic.TabIndex = 51;
-            this.SparesPic.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Mobile_Repairs_M_S.Properties.Resources._186492_200;
-            this.pictureBox2.Location = new System.Drawing.Point(-2, 183);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(103, 93);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 50;
-            this.pictureBox2.TabStop = false;
-            // 
-            // RepairesPic
-            // 
-            this.RepairesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._36384;
-            this.RepairesPic.Location = new System.Drawing.Point(-4, 494);
-            this.RepairesPic.Name = "RepairesPic";
-            this.RepairesPic.Size = new System.Drawing.Size(102, 110);
-            this.RepairesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.RepairesPic.TabIndex = 49;
-            this.RepairesPic.TabStop = false;
             // 
             // Repairs
             // 
@@ -527,12 +531,12 @@ namespace Mobile_Repairs_M_S
             this.Text = "Repairs";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RepairsList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepairesPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CustomersPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RepairsList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -569,7 +573,7 @@ namespace Mobile_Repairs_M_S
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox RepairesPic;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox CustomersPic;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox SparesPic;
         private System.Windows.Forms.Label label14;

@@ -29,9 +29,9 @@ namespace Mobile_Repairs_M_S
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.EditBtn = new System.Windows.Forms.Button();
@@ -44,22 +44,22 @@ namespace Mobile_Repairs_M_S
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.PartsList = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.LogoutPic = new System.Windows.Forms.PictureBox();
-            this.SparesPic = new System.Windows.Forms.PictureBox();
-            this.CustomersPic = new System.Windows.Forms.PictureBox();
-            this.RepairesPic = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.LogoutPic = new System.Windows.Forms.PictureBox();
+            this.SparesPic = new System.Windows.Forms.PictureBox();
+            this.CustomersPic = new System.Windows.Forms.PictureBox();
+            this.RepairesPic = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PartsList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepairesPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel3
@@ -186,26 +186,26 @@ namespace Mobile_Repairs_M_S
             // 
             // PartsList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.PartsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PartsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            this.PartsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PartsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.PartsList.ColumnHeadersHeight = 24;
             this.PartsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PartsList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PartsList.DefaultCellStyle = dataGridViewCellStyle12;
             this.PartsList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PartsList.Location = new System.Drawing.Point(506, 120);
             this.PartsList.Name = "PartsList";
@@ -237,46 +237,6 @@ namespace Mobile_Repairs_M_S
             this.PartsList.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PartsList.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.PartsList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PartsList_CellContentClick);
-            // 
-            // LogoutPic
-            // 
-            this.LogoutPic.Image = global::Mobile_Repairs_M_S.Properties.Resources.download__6_1;
-            this.LogoutPic.Location = new System.Drawing.Point(4, 710);
-            this.LogoutPic.Name = "LogoutPic";
-            this.LogoutPic.Size = new System.Drawing.Size(102, 76);
-            this.LogoutPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.LogoutPic.TabIndex = 3;
-            this.LogoutPic.TabStop = false;
-            // 
-            // SparesPic
-            // 
-            this.SparesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._191;
-            this.SparesPic.Location = new System.Drawing.Point(3, 340);
-            this.SparesPic.Name = "SparesPic";
-            this.SparesPic.Size = new System.Drawing.Size(97, 98);
-            this.SparesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.SparesPic.TabIndex = 2;
-            this.SparesPic.TabStop = false;
-            // 
-            // CustomersPic
-            // 
-            this.CustomersPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._186492_200;
-            this.CustomersPic.Location = new System.Drawing.Point(3, 183);
-            this.CustomersPic.Name = "CustomersPic";
-            this.CustomersPic.Size = new System.Drawing.Size(103, 93);
-            this.CustomersPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CustomersPic.TabIndex = 1;
-            this.CustomersPic.TabStop = false;
-            // 
-            // RepairesPic
-            // 
-            this.RepairesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._36384;
-            this.RepairesPic.Location = new System.Drawing.Point(1, 494);
-            this.RepairesPic.Name = "RepairesPic";
-            this.RepairesPic.Size = new System.Drawing.Size(102, 110);
-            this.RepairesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.RepairesPic.TabIndex = 0;
-            this.RepairesPic.TabStop = false;
             // 
             // label7
             // 
@@ -332,6 +292,50 @@ namespace Mobile_Repairs_M_S
             this.pictureBox1.TabIndex = 40;
             this.pictureBox1.TabStop = false;
             // 
+            // LogoutPic
+            // 
+            this.LogoutPic.Image = global::Mobile_Repairs_M_S.Properties.Resources.download__6_1;
+            this.LogoutPic.Location = new System.Drawing.Point(4, 710);
+            this.LogoutPic.Name = "LogoutPic";
+            this.LogoutPic.Size = new System.Drawing.Size(102, 76);
+            this.LogoutPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.LogoutPic.TabIndex = 3;
+            this.LogoutPic.TabStop = false;
+            this.LogoutPic.Click += new System.EventHandler(this.LogoutPic_Click_1);
+            // 
+            // SparesPic
+            // 
+            this.SparesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._191;
+            this.SparesPic.Location = new System.Drawing.Point(3, 340);
+            this.SparesPic.Name = "SparesPic";
+            this.SparesPic.Size = new System.Drawing.Size(97, 98);
+            this.SparesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.SparesPic.TabIndex = 2;
+            this.SparesPic.TabStop = false;
+            this.SparesPic.Click += new System.EventHandler(this.SparesPic_Click_1);
+            // 
+            // CustomersPic
+            // 
+            this.CustomersPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._186492_200;
+            this.CustomersPic.Location = new System.Drawing.Point(3, 183);
+            this.CustomersPic.Name = "CustomersPic";
+            this.CustomersPic.Size = new System.Drawing.Size(103, 93);
+            this.CustomersPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CustomersPic.TabIndex = 1;
+            this.CustomersPic.TabStop = false;
+            this.CustomersPic.Click += new System.EventHandler(this.CustomersPic_Click);
+            // 
+            // RepairesPic
+            // 
+            this.RepairesPic.Image = global::Mobile_Repairs_M_S.Properties.Resources._36384;
+            this.RepairesPic.Location = new System.Drawing.Point(1, 494);
+            this.RepairesPic.Name = "RepairesPic";
+            this.RepairesPic.Size = new System.Drawing.Size(102, 110);
+            this.RepairesPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.RepairesPic.TabIndex = 0;
+            this.RepairesPic.TabStop = false;
+            this.RepairesPic.Click += new System.EventHandler(this.RepairesPic_Click_1);
+            // 
             // Spares
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -356,11 +360,11 @@ namespace Mobile_Repairs_M_S
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PartsList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LogoutPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SparesPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RepairesPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

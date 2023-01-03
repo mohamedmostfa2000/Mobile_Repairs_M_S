@@ -201,5 +201,33 @@ namespace Mobile_Repairs_M_S
                 MessageBox.Show(Ex.Message);
             }
         }
+
+        private void CustomersPic_Click(object sender, EventArgs e)
+        {
+            Customers obj = new Customers();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void SparesPic_Click(object sender, EventArgs e)
+        {
+            Spares obj = new Spares();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void RepairesPic_Click(object sender, EventArgs e)
+        {
+            Repairs obj = new Repairs();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void LogoutPic_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }

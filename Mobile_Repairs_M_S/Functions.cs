@@ -26,10 +26,16 @@ namespace Mobile_Repairs_M_S
 
         public DataTable GetData(String Query)
         {
-
-            dt = new DataTable();
-            sda = new SqlDataAdapter(Query, Con);
-            sda.Fill(dt);
+            try
+            {
+                dt = new DataTable();
+                sda = new SqlDataAdapter(Query, Con);
+                sda.Fill(dt);
+            }
+            catch
+            {
+                throw;
+            }
             return dt;
 
         }
